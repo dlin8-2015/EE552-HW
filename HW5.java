@@ -16,25 +16,25 @@ public class HW5 {
 
 		// Compute the roots of the quadriatic equation.
 		System.out.print("The equation has ");
-                                //Compute the real roots.
+                //Compute the real roots.
 		if (discriminant > 0)
 		{
 			double root1 = (-b + Math.pow(discriminant, 0.5)) / (2 * a);  
 			double root2 = (-b - Math.pow(discriminant, 0.5)) / (2 * a);  
 			System.out.println("two roots " + root1 + " and " + root2);
 		}
-                                //Compute the equal roots. 
+                //Compute the equal roots. 
 		else if (discriminant == 0)
 		{
 			double root1 = (-b + Math.pow(discriminant, 0.5)) / (2 * a);
 			System.out.println("one root " + root1);
 		}
-                                //Compute the complex roots.
+                //Compute the complex roots.
 		else
-                                {
-                                                double real = (-b)/(2 * a);
-                                                double imaginary  = (Math.pow(-discriminant, 0.5))/(2 * a); 
-			System.out.println("two complex roots " + real + " + "+imaginary + "j"+ " and " + real +" - "+imaginary + "j");
-                                 }
+                {
+                        double real = (-b)/(2 * a);
+                        double imaginary  = (Math.pow(-discriminant, 0.5))/(2 * a); 
+			System.out.println("two complex roots " + real + " + "+ imaginary + "j"+ " and " + real +" - "+ imaginary + "j");
+                }
 	}
 }
